@@ -123,4 +123,35 @@ async function init() {
     }
   }
 
+  // Features of the annotation
+  const annotations = [
+    {
+      note: {
+        label: "Diesel Mpg",
+        title: "4 cyl Diesel Mpg"
+      },
+      type: d3.annotationCalloutCircle,
+      subject: {
+        radius: 20,         // circle radius
+        radiusPadding: 20   // white space around circle befor connector
+      },
+      color: ['cadetblue'],
+      x: xScale(30),
+      y: yScale(41),
+      dy: 70,
+      dx: 70
+    }
+  ]
+
+  // Add annotation to the chart
+  const makeAnnotations = d3.annotation()
+    .annotations(annotations)
+  svg.append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
+    .append('svg')
+    .attr('width', 400)
+    .attr('height', 400)
+    .call(makeAnnotations)
+    .style('font-family', 'Arial, Helvetica, sans-serif')
+
 }
