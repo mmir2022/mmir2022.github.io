@@ -24,7 +24,7 @@ async function third() {
   const xTicks = [0, 2, 4, 6, 8, 10, 12]
 
   const circleRad = 5
-  const animationDur = 200
+  const animationDur = 50
 
   const format = d3.format(".0f");
 

@@ -23,7 +23,7 @@ async function init() {
   const ticks = [10, 20, 50, 100];
 
   const circleRad = 5
-  const animationDur = 200
+  const animationDur = 50
 
   const format = d3.format(".0f");
 
