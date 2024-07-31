@@ -1,0 +1,42 @@
+<html>
+<script src='https://d3js.org/d3.v7.min.js'></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-annotation/2.5.1/d3-annotation.min.js"></script> -->
+<!-- <script src='d3-annotation.js'></script> -->
+<script src='second.js'></script>
+<link rel="stylesheet" href="style.css">
+<link rel="shortcut icon" href="#">
+
+<body onload='second()'>
+  <h1>Fuel Efficiency of Cars (2017)</h1>
+  <nav class="navbar">
+    <ul>
+        <li><a href="index.html">Highway Vs City Mpg</a></li>
+        <li><a href="index1.html">Highway Mpg vs Cylinders</a></li>
+        <li><a href="index2.html">City Mpg vs Cylinders</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h3>Highway Mpg vs Cylinders</h3>
+  </main>
+
+  <div id="tooltip" class="hidden">
+    <p><span id="value">""</span></p>
+  </div>
+
+  <form>
+    <div id="options">
+      <input type="checkbox" id="tooltipCb" name="tooltipCb">
+      <label for="tooltipCb">Show tooltip</label>
+    </div>
+  </form>
+
+  <!-- <svg id="svgContent"></svg> -->
+  <!-- <label>
+    <input type="checkbox" name="peas" id="tooltipCb"/>
+    Show Tooltip
+  </label> -->
+
+</body>
+
+</html>
